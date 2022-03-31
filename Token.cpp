@@ -15,8 +15,8 @@ Token::Token(std::string tipo_token, std::string data, int index) {
 }
 
 void Token::print() {
-	std::cout << "(" << this->tipo_token << ", ";
-	std::cout << this->data << ", ";
+	std::cout << "(" << this->tipo_token << ",\t";
+	std::cout << this->data << ",\t";
 	std::cout << this->index << ")";
 	std::cout << std::endl;
 }
