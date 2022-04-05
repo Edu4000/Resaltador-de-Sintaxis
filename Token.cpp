@@ -1,7 +1,5 @@
 #include "Token.h"
 
-using namespace std;
-
 Token::Token() {
 	this->tipo_token = "";
 	this->data = "";
@@ -19,4 +17,16 @@ void Token::print() {
 	std::cout << this->data << ",\t";
 	std::cout << this->index << ")";
 	std::cout << std::endl;
+}
+
+std::string Token::tipo() {
+	return this->tipo_token;
+}
+
+std::string Token::cadena() {
+	return this->data;
+}
+
+int Token::indice() {
+	return this->index;
 }
